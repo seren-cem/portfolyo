@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Seren Çem • Computer Engineering Student • Full-Stack Developer"
+    />
+    <title>Seren Çem • Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progress-wrap" aria-hidden="true">
+      <span id="progressBar"></span>
+    </div>
+
+    <a class="skip" href="#main">İçeriğe atla</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Ana sayfa">
+          <span class="brand__mark">SC</span>
+          <span class="brand__text">Seren Çem</span>
+        </a>
+
+        <nav class="nav" aria-label="Site menüsü">
+          <a href="#about">Hakkımda</a>
+          <a href="#skills">Yetenekler</a>
+          <a href="#experience">Deneyim</a>
+          <a href="#projects">Projeler</a>
+          <a href="#activities">Sertifikalar</a>
+          <a href="#contact">İletişim</a>
+        </nav>
+
+        <div class="header__actions">
+          <a
+            class="chip"
+            href="https://github.com/seren-cem"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i>📂</i> GitHub
+          </a>
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Tema değiştir"
+          >
+            <span class="icon" aria-hidden="true">☾</span>
+          </button>
+          <button
+            class="icon-btn burger"
+            id="menuToggle"
+            type="button"
+            aria-label="Menüyü aç/kapat"
+          >
+            <span aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <div class="container mobile-nav__inner">
+          <a href="#about">Hakkımda</a>
+          <a href="#skills">Yetenekler</a>
+          <a href="#experience">Deneyim</a>
+          <a href="#projects">Projeler</a>
+          <a href="#activities">Sertifikalar</a>
+          <a href="#contact">İletişim</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="top"></div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content reveal-up">
+            <p class="eyebrow">Computer Engineering • Istanbul / Turkiye</p>
+            <h1 class="hero__title">
+              Merhaba, ben <span class="grad">Seren Cem</span>.
+              <br />
+              Computer Engineering Student & Full-Stack Developer
+            </h1>
+            <p class="hero__subtitle">
+              Haliç Universitesi Bilgisayar Muhendisligi ogrencisiyim. Front-end
+              gelistirme, Node.js tabanli backend sistemleri ve UI/UX odakli
+              urun tasarimlari uzerine calisiyorum.
+            </p>
+
+            <div class="hero__meta">
+              <a class="chip" href="mailto:serencem45@gmail.com"
+                >serencem45@gmail.com</a
+              >
+              <a class="chip" href="tel:+905387072877">+90 538 707 28 77</a>
+              <a
+                class="chip"
+                href="https://github.com/seren-cem"
+                target="_blank"
+                rel="noreferrer"
+                >github.com/seren-cem</a
+              >
+              <span class="chip">Istanbul, Turkiye</span>
+            </div>
+          </div>
+
+          <aside class="card hero__card reveal-up">
+            <div class="card__top">
+              <div class="avatar"><span>SC</span></div>
+              <div>
+                <h2 class="card__title">Kariyer Ozeti</h2>
+                <p class="card__muted">UI/UX + Full-Stack + E-Ticaret</p>
+              </div>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <span class="stat__value" data-count="1">0</span>
+                <span class="stat__label">Guncel Deneyim</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-count="11">0</span>
+                <span class="stat__label">Teknik Arac ve Dil</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-count="5">0</span>
+                <span class="stat__label">Etkinlik/Sertifika</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="scroll-note reveal-up">
+          Asagi kaydir, bilgiler sirayla acilsin.
+        </div>
+      </section>
+
+      <section class="scene" id="about">
+        <div class="container">
+          <div class="panel reveal-up">
+            <div class="section__head">
+              <h2>Hakkimda</h2>
+              <p>
+                Problem cozmeyi seven, zaman yonetimi ve ekip ici iletisime onem
+                veren bir yazilim gelistiriciyim. Hem frontend hem de backend
+                tarafinda uretim yaparak kullanici odakli urunler olusturmaya
+                odaklaniyorum.
+              </p>
+            </div>
+            <div class="grid grid--2">
+              <article class="card reveal-up">
+                <h3>Egitim</h3>
+                <ul class="timeline">
+                  <li>
+                    <span class="timeline__title">Halic Universitesi</span>
+                    <span class="timeline__meta"
+                      >Bilgisayar Muhendisligi • 2022 - Devam</span
+                    >
+                  </li>
+                  <li>
+                    <span class="timeline__title"
+                      >English Preparation School</span
+                    >
+                    <span class="timeline__meta">1 Yil Hazirlik</span>
+                  </li>
+                  <li>
+                    <span class="timeline__title">Yesilkoy Anadolu Lisesi</span>
+                    <span class="timeline__meta">2017 - 2021</span>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="card reveal-up">
+                <h3>Diller</h3>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>Turkce</span><span class="muted">Ana Dil</span>
+                  </div>
+                  <div class="bar"><span data-progress="100"></span></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>English</span><span class="muted">Excellent</span>
+                  </div>
+                  <div class="bar"><span data-progress="95"></span></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="skills">
+        <div class="container">
+          <div class="panel reveal-up">
+            <div class="section__head">
+              <h2>Teknik Yetenekler</h2>
+              <p>Asagi kaydirdikca yetenek seviyeleri canlanir.</p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card reveal-up">
+                <h3>Programlama Dilleri</h3>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>Python</span><span>%78</span>
+                  </div>
+                  <div class="bar"><span data-progress="78"></span></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>JavaScript</span><span>%88</span>
+                  </div>
+                  <div class="bar"><span data-progress="88"></span></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>Problem Solving</span><span>%90</span>
+                  </div>
+                  <div class="bar"><span data-progress="90"></span></div>
+                </div>
+              </div>
+              <div class="skill-card reveal-up">
+                <h3>Web Development</h3>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>HTML/CSS</span><span>%92</span>
+                  </div>
+                  <div class="bar"><span data-progress="92"></span></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>JavaScript</span><span>%88</span>
+                  </div>
+                  <div class="bar"><span data-progress="88"></span></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>Express.js</span><span>%85</span>
+                  </div>
+                  <div class="bar"><span data-progress="85"></span></div>
+                </div>
+              </div>
+              <div class="skill-card reveal-up">
+                <h3>Tools & Technologies</h3>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>Git & GitHub</span><span>%86</span>
+                  </div>
+                  <div class="bar"><span data-progress="86"></span></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>Figma / Canva</span><span>%84</span>
+                  </div>
+                  <div class="bar"><span data-progress="84"></span></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__row">
+                    <span>VS Code / Cursor</span><span>%87</span>
+                  </div>
+                  <div class="bar"><span data-progress="87"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="experience">
+        <div class="container">
+          <div class="panel reveal-up">
+            <div class="section__head">
+              <h2>Deneyim</h2>
+            </div>
+            <div class="timeline timeline--cards">
+              <article class="card reveal-up">
+                <h3>Atlas University - Distance Education Center (UZEM)</h3>
+                <p class="timeline__meta">
+                  Intern - Software Development & Design | June 2025 - August
+                  2025
+                </p>
+                <p>
+                  HTML, CSS ve JavaScript kullanarak front-end arayuzleri
+                  gelistirdim ve surdurdum.
+                </p>
+                <p>
+                  Node.js ve MongoDB ile Uzem Randevu Sistemi yapisini
+                  tasarladim; Figma mockup ve WordPress icerik yonetiminde aktif
+                  gorev aldim.
+                </p>
+                <p>
+                  Ekip ile birlikte UI/UX ve sistem performansi iyilestirme
+                  calismalarina katildim.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="projects">
+        <div class="container">
+          <div class="panel reveal-up">
+            <div class="section__head">
+              <h2>Projeler</h2>
+              <p>CV odakli olarak gelistirdigim calisma alanlari.</p>
+            </div>
+            <div class="grid grid--3">
+              <article class="card reveal-up">
+                <h3>Uzem Randevu Sistemi</h3>
+                <p>
+                  Node.js ve MongoDB ile randevu akislarinin planlandigi sistem.
+                </p>
+                <div class="tags">
+                  <span>Node.js</span><span>MongoDB</span
+                  ><span>JavaScript</span>
+                </div>
+              </article>
+              <article class="card reveal-up">
+                <h3>Front-End Interface Development</h3>
+                <p>
+                  HTML, CSS ve JavaScript ile bakimi kolay, sade ve kullanisli
+                  ekranlar.
+                </p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </article>
+              <article class="card reveal-up">
+                <h3>UI/UX Mockup and Content Flow</h3>
+                <p>
+                  Figma ile mockup tasarimi ve WordPress tabanli icerik
+                  sureclerinin yonetimi.
+                </p>
+                <div class="tags">
+                  <span>Figma</span><span>WordPress</span><span>UI/UX</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="activities">
+        <div class="container">
+          <div class="panel reveal-up">
+            <div class="section__head">
+              <h2>Activities & Certificates</h2>
+              <p>CV dosyandaki etkinlik ve sertifika kayitlari.</p>
+            </div>
+            <div class="timeline timeline--cards">
+              <article class="card reveal-up">
+                <h3>Winds of Change - AI & Innovation Event</h3>
+                <p class="timeline__meta">2024</p>
+              </article>
+              <article class="card reveal-up">
+                <h3>Global AI Hub - Introduction to Artificial Intelligence</h3>
+                <p class="timeline__meta">Certificate</p>
+              </article>
+              <article class="card reveal-up">
+                <h3>Codemasters - Software Development Hackathon</h3>
+                <p class="timeline__meta">Participant</p>
+              </article>
+              <article class="card reveal-up">
+                <h3>Product Management Day - Coderspace</h3>
+              </article>
+              <article class="card reveal-up">
+                <h3>Akbank Genclik Akademisi - Generative AI Coding 101</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="contact">
+        <div class="container">
+          <div class="panel reveal-up">
+            <div class="section__head">
+              <h2>Iletisim</h2>
+              <p>
+                Birlikte calisabilecegimiz bir proje varsa mesaj birakabilirsin.
+              </p>
+            </div>
+            <form id="contactForm" class="contact-form">
+              <input type="text" name="name" placeholder="Ad Soyad" required />
+              <input type="email" name="email" placeholder="E-posta" required />
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Mesajiniz"
+                required
+              ></textarea>
+              <button class="btn" type="submit">Mesaj Gonder</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Seren Cem. Tum haklari saklidir.</p>
+        <a href="mailto:serencem45@gmail.com">serencem45@gmail.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
